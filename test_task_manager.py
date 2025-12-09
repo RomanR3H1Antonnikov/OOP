@@ -37,21 +37,3 @@ def test_save_and_load_via_json():
     assert len(list_2.task_list) == 1
     assert list_2.task_list[0]["description"] == "Простая тестовая задача"
     assert list_2.task_list[0]["completed"] == True
-
-
-if __name__ == "__main__":
-    try:
-        test_add_and_complete_task()
-        print("Тест 1 - прошёл проверку!")
-    except AssertionError as e:
-        print(f"Тест 1 не пройден: {e}")
-    try:
-        test_remove_task()
-        print("Тест 2 - прошёл проверку!")
-    except AssertionError as e:
-        print(f"Тест 2 не пройден: {e}")
-    try:
-        test_save_and_load_via_json()
-        print("Тест 3 - прошёл проверку!")
-    except AssertionError as e:
-        print(f"Тест 3 не пройден: {e}")
