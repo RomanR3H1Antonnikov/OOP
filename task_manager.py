@@ -18,7 +18,7 @@ class TaskManager:
     def complete_task(self, index: int):
         if 0 <= index < len(self.task_list):
             self.task_list[index]["completed"] = True
-            print(f"Задача '{self.task_list[index]["description"]}' успешно отмечена как выполненная")
+            print(f"""Задача '{self.task_list[index]["description"]}' успешно отмечена как выполненная""")
         else:
             print("Такой задачи нет в списке или индекс указан неверно")
 
